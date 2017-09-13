@@ -1,0 +1,33 @@
+
+In brief, we'd like you to run and visualise a multivariate regression using R and Tableau. 
+
+
+THE DATA
+
+Attached, you'll find a CSV data set derived from one of our apps. 
+
+Each row represents a respondent. 
+
+Column 1 tells us how many short surveys this respondent has filled in.
+
+Columns 2 and 3 give the respondent's age and gender.
+
+Columns 4 to 8 are the mean of one or more responses by this user to several psychological state outcome variables, scaled from 0 to 1 (or missing if never answered).
+
+Columns 9 and upwards are again average responses from 0 to 1, for various trait questions. Missing data are frequent here. These questions combine into 14 different components identified by the two uppercase letters of the column name (that is: AC, BA, BP, CE, EC, EE, GS, KP, RC, SA, SR, SU, TL, TS). For example, avg_CE_3 is a CE question, which stands for Customer Experience.
+
+
+THE TASK
+
+We'd like you to aggregate columns 9 and above into 14 trait components. 
+
+Then we'd like you to run a multivariate regression of one of the state variables, avg_happy, on the left hand side, against all those components on the right hand side. 
+
+Finally, we'd like you to visualise the results in a format similar to the attached chart. There should be a bubble for each component. X positions should reflect the component's average score (from 0 to 1), and Y positions should correspond to the component's regression coefficient. 
+
+It would be nice if significant and non-significant coefficients were differentiated somehow, and feel free to add anything else you think helpful (e.g. via tooltips).
+
+We'd like you to achieve this with R and Tableau — ideally integrated and automated so that if we were to provide a different CSV file (maybe even a file with different trait questions, or even different components?) the whole thing could be recreated in an instant. And we'd like to see the code as well as the result.
+
+
+I should note that we are not Tableau experts, so if you think this is impossible (or will take you an unreasonably long time) please do let us know. Please also do come back to us with any questions or clarifications — it's much better to ask even a dumb question than risk going off and solving the wrong problem.
